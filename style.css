@@ -1,13 +1,52 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(to bottom, #f7f7f7, #c9e4ca);
+    animation: moveGradient 10s infinite;
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.game-container {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Adds a slight opacity to the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.game-container h1 {
+    margin-bottom: 10px;
+}
+
+.game-container p {
+    margin-bottom: 20px;
+}
+
 #gameBoard {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    margin: auto;
+    width: 500px;
 }
 
 .card {
     width: 100px;
     height: 100px;
-    background-color: #f0f0f0;
+    background-color: #8baf7b;
     display: flex;
     justify-content: center;
     align-items: center;
