@@ -1,0 +1,24 @@
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card.flipped {
+    background-color: #fff;
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+}
